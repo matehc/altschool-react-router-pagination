@@ -3,6 +3,10 @@ import {Link} from 'react-router-dom';
 
 function UserCard(props) {
   const {user} = props;
+  
+    // Use this to Simulate a JS error
+    // throw new Error('I crashed!');
+
   return (
   <div>
     <div className="ui fluid card">
