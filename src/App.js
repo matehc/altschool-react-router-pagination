@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from "react-router-dom";
+import Users from "./pages/Users";
+import SharedNavLayout from "./pages/SharedNavLayout";
+import SingleUser from "./pages/single_user/singleUser";
+import ErrorPage from "./pages/error_page/ErrorPage.component";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes> 
+      <Route path="/" element={<SharedNavLayout/>}>
+        <Route index element = {<Users/>} />
+        <Route path="/users">
+        <Route path="/users/user/:id" element={<SingleUser/>}/>
+        </Route>
+        <Route path="*" element = {<ErrorPage/>} />
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
+
+
+
