@@ -19,7 +19,7 @@ function SingleUser() {
                 <div className="circle circle-2"></div>
                 <img
                   src={state.picture.thumbnail}
-                  alt={`image of ${username}`}
+                  alt={`${username}`}
                   className="profile-pic_img"
                 />
               </div>

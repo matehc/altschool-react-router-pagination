@@ -73,7 +73,7 @@ useEffect(  () => {
         return function cleanup(){
             cancelRequest = true;
         }
-}, [url]) 
+},[url]) 
 
 
 

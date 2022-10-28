@@ -11,7 +11,7 @@ function UserCard(props) {
   <div>
     <div className="ui fluid card">
         <div className="image">
-          <img src={user.picture.large}/>
+          <img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`}/>
         </div>
         <div className="content">
           <p className="">{`${user.name.first} ${user.name.last} `}</p>
