@@ -14,13 +14,13 @@ The route is:
 ```
     /
 ```
-
+![Homepage](https://res.cloudinary.com/matehc/image/upload/v1666964284/altschool/homepage_pjkfoh.png)
 
 ## User Page
 
 This page shows detail of a user.
 
-The route is,
+The route is:
 
 ```
     users/user/:userId
@@ -28,10 +28,15 @@ The route is,
 ```
 ** Add image of user page here **
 
-## Error Page
+![User](https://res.cloudinary.com/matehc/image/upload/v1666964300/altschool/userdetail_cnjhms.png)
+
+
+## 404 Error Page
 
 This page displays when a user navigates to an invalid route.
 
+![404 page](https://res.cloudinary.com/matehc/image/upload/v1666964290/altschool/404_xsoomx.png)
 
 ## ErrorBoundary
 
+![ErrorBoundary page](https://res.cloudinary.com/matehc/image/upload/v1666964298/altschool/errorboundary_tpfiep.png)
